@@ -1,6 +1,6 @@
 # Python Polylith Example
 
-This is a repository with an example `Python` setup of the Polylith Architecture using `hatch`.
+This is a repository with an example `Python` setup of the Polylith Architecture using `PDM`.
 Here you will find examples of code being shared between different kind of projects, and the developer tooling setup.
 
 ## Developer experience
@@ -15,10 +15,5 @@ namespace_packages = True
 explicit_package_bases = True
 ```
 
-### Tooling support
-Currently, there's tooling support for using Polylith in Python for `Poetry`.
-
-__Currently working on tooling support for Hatch too!__
-
-Have a look at this repository:
+Have a look at this repository for more information and links to documentation:
 [Python tools for the Polylith Architecture](https://github.com/DavidVujic/python-polylith)
