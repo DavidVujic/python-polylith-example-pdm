@@ -7,10 +7,10 @@ add-gcp-entrypoint:
 
 export-deps:
 	@(echo "functions-framework==3.5.x" > requirements.txt)
-	@echo "I haven't found a way to export deps from Hatch, as done in Poetry. Using hardcoded requirements.txt in this folder."
+	@echo "I haven't read up on how to export deps from PDM yet. Using hardcoded requirements.txt in this folder."
 
 build-gcp-project: export-deps add-gcp-entrypoint
-	hatch build
+	pdm build
 
 gcp-package: build-gcp-project
 	mv dist/$(PROJECT_NAME)-py3-none-any.whl dist/function.zip

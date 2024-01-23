@@ -8,7 +8,7 @@ version = "0.1.0"
 description = 'A Python Polylith example code repo'
 authors = [{ name = "David Vujic" }]
 
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 
 dependencies = [
   "functions-framework~=3.5.0",
@@ -17,9 +17,10 @@ dependencies = [
 [project.scripts]
 consumer = "example.consumer.core:main"
 
+[tool.pdm.build]
+includes = ["main.py", "requirements.txt"] # added by the build process
+
 [tool.polylith.bricks]
 "../../bases/example/greet_gcp_function" = "example/greet_gcp_function"
 "../../components/example/greeting" = "example/greeting"
 "../../components/example/log" = "example/log"
-"main.py" = "main.py" # added by the build process
-"requirements.txt" = "requirements.txt" # added by the build process
