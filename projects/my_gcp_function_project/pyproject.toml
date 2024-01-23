@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["pdm-backend", "pdm-polylith-bricks"]
+build-backend = "pdm.backend"
 
 [project]
 name = "my_gcp_function_project"
@@ -17,7 +17,7 @@ dependencies = [
 [project.scripts]
 consumer = "example.consumer.core:main"
 
-[tool.hatch.build.force-include]
+[tool.polylith.bricks]
 "../../bases/example/greet_gcp_function" = "example/greet_gcp_function"
 "../../components/example/greeting" = "example/greeting"
 "../../components/example/log" = "example/log"

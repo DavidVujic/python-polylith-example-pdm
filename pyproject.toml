@@ -1,5 +1,5 @@
 [build-system]
-requires = ["pdm-backend"]
+requires = ["pdm-backend", "pdm-polylith-workspace"]
 build-backend = "pdm.backend"
 
 [project]
@@ -12,15 +12,20 @@ license = {text = "MIT"}
 authors = [{ name = "David Vujic" }]
 
 dependencies = [
-    "fastapi~=0.106.0",
-    "uvicorn~=0.25.0",
-    "functions-framework~=3.5.0",
-    "sqlalchemy~=2.0.23",
-    "confluent-kafka~=2.3.0",
-    "black~=23.12.1",
-    "isort~=5.13.2",
-    "mypy~=1.8.0",
-    "pytest~=7.4.3",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "functions-framework>=3.5.0",
+    "sqlalchemy>=2.0.25",
+    "confluent-kafka>=2.3.0",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy>=1.8.0",
+    "black>=23.12.1",
+    "isort>=5.13.2",
+    "pytest>=7.4.4",
+    "polylith-cli>=1.1.0",
 ]
 
 [tool.polylith.bricks]
