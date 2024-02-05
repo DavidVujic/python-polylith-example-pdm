@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:e777bdb5421957ff065620c7c70d9c11dd50eaf53066117cac269b92223bb44b"
+content_hash = "sha256:3084961c4ff98cc095431a45dbc8e19fe823022565e8f7977c90011e64f2c2dc"
 
 [[package]]
 name = "annotated-types"
@@ -175,18 +175,18 @@ files = [
 
 [[package]]
 name = "fastapi"
-version = "0.109.0"
+version = "0.109.2"
 requires_python = ">=3.8"
 summary = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 groups = ["default"]
 dependencies = [
     "pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4",
-    "starlette<0.36.0,>=0.35.0",
+    "starlette<0.37.0,>=0.36.3",
     "typing-extensions>=4.8.0",
 ]
 files = [
-    {file = "fastapi-0.109.0-py3-none-any.whl", hash = "sha256:8c77515984cd8e8cfeb58364f8cc7a28f0692088475e2614f7bf03275eba9093"},
-    {file = "fastapi-0.109.0.tar.gz", hash = "sha256:b978095b9ee01a5cf49b19f4bc1ac9b8ca83aa076e770ef8fd9af09a2b88d191"},
+    {file = "fastapi-0.109.2-py3-none-any.whl", hash = "sha256:2c9bab24667293b501cad8dd388c05240c850b58ec5876ee3283c47d6e1e3a4d"},
+    {file = "fastapi-0.109.2.tar.gz", hash = "sha256:f3817eac96fe4f65a2ebb4baa000f394e55f5fccdaf7f75250804bc58f354f73"},
 ]
 
 [[package]]
@@ -541,7 +541,7 @@ files = [
 
 [[package]]
 name = "polylith-cli"
-version = "1.1.0"
+version = "1.2.1"
 requires_python = ">=3.8,<4.0"
 summary = "Python tooling support for the Polylith Architecture"
 groups = ["dev"]
@@ -551,8 +551,8 @@ dependencies = [
     "typer[all]<0.10.0,>=0.9.0",
 ]
 files = [
-    {file = "polylith_cli-1.1.0-py3-none-any.whl", hash = "sha256:77bc33d673823e35d2dc75d7816a4428e88151c1a0aa2185070b1c64e5f7819d"},
-    {file = "polylith_cli-1.1.0.tar.gz", hash = "sha256:db08a955191d11724a7e1164aa01a218a09b1ca4d10277bf9c36f479a840c702"},
+    {file = "polylith_cli-1.2.1-py3-none-any.whl", hash = "sha256:ee4977443fd584600238648d87382132cfaac826fe660138de75b556040dc7be"},
+    {file = "polylith_cli-1.2.1.tar.gz", hash = "sha256:49d18046d52c8bdb8167726abe8ced396a2dc47c9b633bf5568298060c3fa96d"},
 ]
 
 [[package]]
@@ -780,7 +780,7 @@ files = [
 
 [[package]]
 name = "starlette"
-version = "0.35.1"
+version = "0.36.3"
 requires_python = ">=3.8"
 summary = "The little ASGI library that shines."
 groups = ["default"]
@@ -789,8 +789,8 @@ dependencies = [
     "typing-extensions>=3.10.0; python_version < \"3.10\"",
 ]
 files = [
-    {file = "starlette-0.35.1-py3-none-any.whl", hash = "sha256:50bbbda9baa098e361f398fda0928062abbaf1f54f4fadcbe17c092a01eb9a25"},
-    {file = "starlette-0.35.1.tar.gz", hash = "sha256:3e2639dac3520e4f58734ed22553f950d3f3cb1001cd2eaac4d57e8cdc5f66bc"},
+    {file = "starlette-0.36.3-py3-none-any.whl", hash = "sha256:13d429aa93a61dc40bf503e8c801db1f1bca3dc706b10ef2434a36123568f044"},
+    {file = "starlette-0.36.3.tar.gz", hash = "sha256:90a671733cfb35771d8cc605e0b679d23b992f8dcfad48cc60b38cb29aeb7080"},
 ]
 
 [[package]]
