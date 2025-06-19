@@ -14,9 +14,6 @@ dependencies = [
   "functions-framework~=3.5.0",
 ]
 
-[project.scripts]
-consumer = "example.consumer.core:main"
-
 [tool.pdm.build]
 includes = ["main.py", "requirements.txt"] # added by the build process
 
