@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:cc1b83fe558457e94a543ece01471fef4f91cab1fe7ea2f1d5407892808834cf"
+content_hash = "sha256:0e1a195978ed8c8edaf9a8d6c5d9d25ad1e52d2c24f01f44c019fd9d2f26e646"
 
 [[metadata.targets]]
 requires_python = ">=3.9"
@@ -688,18 +688,21 @@ files = [
 
 [[package]]
 name = "polylith-cli"
-version = "1.12.0"
+version = "1.48.3"
 requires_python = "<4.0,>=3.8"
 summary = "Python tooling support for the Polylith Architecture"
 groups = ["dev"]
 dependencies = [
-    "rich==13.*",
+    "pyyaml",
+    "rich",
     "tomlkit==0.*",
     "typer==0.*",
+    "typing-extensions; python_version >= \"3.9\"",
+    "typing-extensions<4.14; python_version == \"3.8\"",
 ]
 files = [
-    {file = "polylith_cli-1.12.0-py3-none-any.whl", hash = "sha256:dcd6ba3751ab42906706f7e8eeb592e001f77dcb3a1210de2f21bfe44adb5121"},
-    {file = "polylith_cli-1.12.0.tar.gz", hash = "sha256:efbb39dadc580d25eae2abf1a100173ce4fef9c25c706d5998051a5cebd4cb94"},
+    {file = "polylith_cli-1.48.3-py3-none-any.whl", hash = "sha256:5a3a6f036cb3640fc497fdf13adfb347e691e3301709d597cd69b870cf624c6e"},
+    {file = "polylith_cli-1.48.3.tar.gz", hash = "sha256:d6c325a87f470ed2807a9c411a10e53688c379aa9966ed1e30d5ff12fa1f9d7c"},
 ]
 
 [[package]]
@@ -869,7 +872,7 @@ name = "pyyaml"
 version = "6.0.1"
 requires_python = ">=3.6"
 summary = "YAML parser and emitter for Python"
-groups = ["default"]
+groups = ["default", "dev"]
 files = [
     {file = "PyYAML-6.0.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d858aa552c999bc8a8d57426ed01e40bef403cd8ccdd0fc5f6f04a00414cac2a"},
     {file = "PyYAML-6.0.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:fd66fc5d0da6d9815ba2cebeb4205f95818ff4b79c3ebe268e75d961704af52f"},
